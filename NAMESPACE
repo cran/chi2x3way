@@ -1,0 +1,13 @@
+S3method("print","Chi2for3way")
+import(methods,tools)
+importFrom("grDevices", "dev.new")
+importFrom("stats", "pchisq", "qchisq")
+importFrom("stats", "ppoints", "qqplot", "quantile", "runif", "var")
+importFrom("graphics", "abline", "arrows", "legend", "lines", "par",
+"plot", "plot.new", "points", "text", "title")
+exportPattern("^[[:alpha:]]+")
+exportClasses("chi3class")
+export(
+"Chi2for3way",
+"print.Chi2for3way"
+)
