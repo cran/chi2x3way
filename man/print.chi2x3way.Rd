@@ -1,5 +1,5 @@
-\name{print.Chi2for3way}
-\alias{print.Chi2for3way}
+\name{print.chi2x3way}
+\alias{print.chi2x3way}
 \title{
 Printing function of the results of the three-way index partition 
 }
@@ -8,7 +8,7 @@ This function prints the results of the three-way index partition. \cr
 The input parameter is the name of the output of the main function  \code{Chi2for3way}. 
 }
 \usage{
-\S3method{print}{Chi2for3way}(x, digits = 3, ...) 
+\S3method{print}{chi2x3way}(x, digits = 3, ...) 
 }
 \arguments{
 \item{x}{The name of the output object, for example say \code{res}, used with the main function \code{Chi2for3way}.}
@@ -42,8 +42,8 @@ Lombardo R Carlier A D'Ambra L (1996)  Nonsymmetric correspondence analysis for 
 Lombardo R, Takane Y and Beh EJ}
 \examples{
 data(olive)
-resolive<-Chi2for3way(olive,scen=2,simulation=FALSE) 
-print.Chi2for3way(resolive)
+resolive<-chi2x3way(olive,scen=2,simulation=FALSE) 
+print.chi2x3way(resolive)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

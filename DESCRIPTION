@@ -1,9 +1,9 @@
 Package: chi2x3way
 Type: Package
-Title: Chi-Squared and Tau Index Partitions for Three-Way Contingency
+Title: Partitioning Chi-Squared and Tau Index for Three-Way Contingency
         Tables
-Version: 1.0
-Date: 2016-12-12
+Version: 1.1
+Date: 2017-01-23
 Author: Rosaria Lombardo,  Yoshio Takane and Eric J Beh
 Maintainer: Rosaria Lombardo  <rosaria.lombardo@unina2.it>
 Description: Provides two index partitions for three-way contingency tables:
@@ -14,6 +14,6 @@ LazyData: true
 License: GPL (> 2)
 URL: https://www.R-project.org
 NeedsCompilation: no
-Packaged: 2016-12-13 08:05:07 UTC; Amministratore
+Packaged: 2017-01-23 17:35:30 UTC; Amministratore
 Repository: CRAN
-Date/Publication: 2016-12-13 15:33:41
+Date/Publication: 2017-01-23 21:11:06

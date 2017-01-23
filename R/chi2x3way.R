@@ -1,10 +1,11 @@
-Chi2for3way<-function(X, indextype="chi2",scen = 2,
+chi2x3way<-function(X, indextype="chi2",scen = 2,
 simulation=FALSE,nboots=1000,nran=1000,
 pi=rep(1/dim(X)[[1]],dim(X)[[1]]),pj=rep(1/dim(X)[[2]],dim(X)[[2]]),
 pk=rep(1/dim(X)[[3]],dim(X)[[3]]),digits=3){
 # REAL DATA X three-way array
 # chi-2 index for three-way contingency tables  and its partitions under Scenario 1 and 2
 #----------------------------------------------------------------------------
+if (!any(indextype==c("chi2","tauM"))) stop(paste("Indextype must be equal to chi2  or tauM"))
 X<-as.array(X)
 ni<-dim(X)[[1]]
 nj<-dim(X)[[2]]
@@ -55,5 +56,7 @@ if (simulation==FALSE){
 simulaout<-NULL
 }
 cat("Results to print\n")
-list(X=X,indexparts=S,indextype=indextype,simulaout=simulaout,pi=pi,pj=pj,pk=pk,scen=scen,simulation=simulation,nboots=nboots)
+respart<-list(X=X,indexparts=S,indextype=indextype,simulaout=simulaout,pi=pi,pj=pj,pk=pk,scen=scen,simulation=simulation,nboots=nboots)
+class(respart)<-"chi2x3way"
+return(respart)
 }

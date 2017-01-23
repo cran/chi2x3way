@@ -1,4 +1,4 @@
-print.Chi2for3way <-
+print.chi2x3way <-
 function(x,digits=3, ...) {
 cat("\n    Data Matrix:\n")
 print(x$X)

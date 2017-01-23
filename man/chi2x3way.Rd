@@ -1,5 +1,5 @@
-\name{Chi2for3way}
-\alias{Chi2for3way}
+\name{chi2x3way}
+\alias{chi2x3way}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Chi-square and Marcotorchino's index for three-way contingency tables
@@ -14,7 +14,7 @@ estimated from the data. In order to check the distribution of the Marcotorchino
 \code{simulation=TRUE}.
 }
 \usage{
-Chi2for3way(X,  indextype = "chi2", scen = 2, simulation = FALSE,
+chi2x3way(X,  indextype = "chi2", scen = 2, simulation = FALSE,
 nboots = 1000, nran = 1000,
 pi = rep(1/dim(X)[[1]],dim(X)[[1]]),
 pj = rep(1/dim(X)[[2]],dim(X)[[2]]),pk = rep(1/dim(X)[[3]],dim(X)[[3]]), digits = 3)
@@ -102,7 +102,7 @@ This function belongs to the class \code{chi3class}.
 ##-- ==>  Define data, use random,
 ## The function is currently defined as
 data(olive)
-Chi2for3way(olive, scen = 2, indextype = "tauM", simulation = FALSE, nboots = 100, nran = 1000,
+chi2x3way(olive, scen = 2, indextype = "tauM", simulation = FALSE, nboots = 100, nran = 1000,
 pi = rep(1/dim(olive)[[1]],dim(olive)[[1]]), pj = rep(1/dim(olive)[[2]],dim(olive)[[2]]),
 pk = rep(1/dim(olive)[[3]],dim(olive)[[3]]), digits = 3)
 }
